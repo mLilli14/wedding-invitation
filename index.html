@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#f3e8f5">
 <title>Αδάμος & Μαρία — 27.09.2026</title>
-<link rel="stylesheet" href="final.css?v=10">
+<link rel="stylesheet" href="final-v11.css?v=11">
 </head>
 <body>
 <main>
@@ -20,24 +20,28 @@
 </section>
 
 <section id="coverScene" class="scene">
-  <div class="leaf cover-leaf" id="coverLeaf">
-    <div class="paper"><img src="page-1.png" alt="Εξώφυλλο"></div>
-    <img class="lace right" src="lace-strip.png" alt="">
-    <img class="bow" id="bow" src="bow-real.png" alt="">
+  <div class="cover-shell" id="coverShell">
+    <div class="cover-depth"></div>
+    <div class="cover-card">
+      <img class="page-img" src="page-1.png" alt="Εξώφυλλο">
+    </div>
+    <img class="lace lace-top" src="lace-top.svg" alt="">
+    <img class="lace lace-bottom" src="lace-bottom.svg" alt="">
+    <img class="lace lace-right" src="lace-right.svg" alt="">
+    <img class="bow" id="bow" src="bow-clean.png" alt="">
   </div>
   <button id="untieBow" class="btn">Λύσε τον φιόγκο</button>
 </section>
 
 <section id="pageScene" class="scene">
   <div class="flip-stage">
+    <div class="page-depth"></div>
     <div class="flip-leaf" id="flipLeaf">
       <div class="face front">
-        <div class="paper"><img src="page-2.png" alt="Μπροστινή όψη"></div>
-        <img class="lace right" src="lace-strip.png" alt="">
+        <div class="plain-card"><img src="page-2.png" alt="Μπροστινή όψη"></div>
       </div>
       <div class="face back">
-        <div class="paper"><img src="page-3.png" alt="Πίσω όψη"></div>
-        <img class="lace left" src="lace-strip.png" alt="">
+        <div class="plain-card"><img src="page-3.png" alt="Πίσω όψη"></div>
       </div>
       <div class="page-light"></div>
     </div>
@@ -49,9 +53,14 @@
 </section>
 
 <section id="backScene" class="scene">
-  <div class="leaf back-leaf">
-    <div class="paper"><img src="page-4.png" alt="Πίσω εξώφυλλο"></div>
-    <img class="lace left" src="lace-strip.png" alt="">
+  <div class="cover-shell back-cover">
+    <div class="cover-depth back-depth"></div>
+    <div class="cover-card">
+      <img class="page-img" src="page-4.png" alt="Πίσω εξώφυλλο">
+    </div>
+    <img class="lace lace-top" src="lace-top.svg" alt="">
+    <img class="lace lace-bottom" src="lace-bottom.svg" alt="">
+    <img class="lace lace-left" src="lace-left.svg" alt="">
   </div>
   <button id="showMap" class="btn">Δες τον χάρτη</button>
 </section>
@@ -75,6 +84,6 @@
   </div>
 </section>
 </main>
-<script src="final.js?v=10"></script>
+<script src="final-v11.js?v=11"></script>
 </body>
 </html>
