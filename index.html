@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="el">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Αδάμος & Μαρία — 27.09.2026</title>
+<link rel="stylesheet" href="style-v6.css?v=6">
+</head>
+<body>
+<main>
+<section id="intro" class="scene active">
+  <div class="envelope-wrap">
+    <div class="envelope" id="envelope">
+      <div class="env-back"></div><div class="env-card-preview"></div><div class="env-flap"></div><div class="env-front"></div>
+    </div>
+    <button id="openEnvelope" class="btn">Άνοιξε το προσκλητήριο</button>
+  </div>
+</section>
+
+<section id="coverScene" class="scene">
+  <div class="booklet cover-booklet" id="coverBooklet">
+    <img class="lace-frame" src="lace-v6.png" alt="">
+    <img class="sheet-image" src="page-1.png" alt="Εξώφυλλο">
+    <img class="bow-img" src="bow-v6.png" alt="">
+  </div>
+  <button id="untieBow" class="btn">Λύσε τον φιόγκο</button>
+</section>
+
+<section id="pageScene" class="scene">
+  <div class="page-turn-stage">
+    <div class="booklet page-booklet">
+      <img class="lace-frame" src="lace-v6.png" alt="">
+      <img id="pageImage" class="sheet-image" src="page-2.png" alt="Μπροστινή όψη">
+      <div class="page-shine"></div>
+    </div>
+  </div>
+  <div class="actions">
+    <button id="turnPage" class="btn">Γύρισε τη σελίδα</button>
+    <button id="closeBook" class="btn hidden">Κλείσε το προσκλητήριο</button>
+  </div>
+</section>
+
+<section id="backScene" class="scene">
+  <div class="booklet back-booklet">
+    <img class="lace-frame" src="lace-v6.png" alt="">
+    <img class="sheet-image" src="page-4.png" alt="Οπισθόφυλλο">
+  </div>
+  <button id="showMap" class="btn">Δες τον χάρτη</button>
+</section>
+
+<section id="mapScene" class="scene">
+  <div class="map-card">
+    <h1>Οι τοποθεσίες μας</h1><p>Πατήστε για άμεση πλοήγηση.</p>
+    <a class="location" href="https://maps.app.goo.gl/kownvrBH4MBfg8E36" target="_blank" rel="noopener"><span>✦</span><span><strong>Ιερός Ναός Αγίας Θέκλας</strong><small>Αγία Νάπα</small></span></a>
+    <div class="route-line"><span>27.09.2026</span></div>
+    <a class="location" href="https://maps.app.goo.gl/R26q9qrDRgKVt6Wx8" target="_blank" rel="noopener"><span>✦</span><span><strong>Ζάππειον Παλάς</strong><small>Δερύνεια</small></span></a>
+    <div class="map-buttons">
+      <a class="btn link-btn" href="https://maps.app.goo.gl/kownvrBH4MBfg8E36" target="_blank" rel="noopener">Οδηγίες για την εκκλησία</a>
+      <a class="btn link-btn" href="https://maps.app.goo.gl/R26q9qrDRgKVt6Wx8" target="_blank" rel="noopener">Οδηγίες για τη δεξίωση</a>
+    </div>
+    <button id="restart" class="restart">Προβολή από την αρχή</button>
+  </div>
+</section>
+</main>
+<script src="script-v6.js?v=6"></script>
+</body>
+</html>
