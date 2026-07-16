@@ -1,1 +1,1 @@
-# Wedding Invitation v12 — Mobile Responsive
+# Wedding Invitation v13 — Definitive Mobile Fix
