@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#f3e8f5">
 <title>Αδάμος & Μαρία — 27.09.2026</title>
-<link rel="stylesheet" href="final-v14.css?v=14">
+<link rel="stylesheet" href="final-v15.css?v=15">
 </head>
 <body>
 
@@ -14,6 +14,10 @@
   <div class="loader-shimmer"></div>
   <div class="loader-text">Αδάμος & Μαρία</div>
 </div>
+
+<div id="openingGlow" class="opening-glow" aria-hidden="true"></div>
+<button id="musicToggle" class="music-toggle hidden" type="button" aria-label="Παύση μουσικής" title="Μουσική">♪</button>
+<audio id="weddingMusic" src="wedding-ambient.wav" preload="auto" loop></audio>
 
 <main id="mainContent" class="is-loading">
 <section id="intro" class="scene active">
@@ -87,10 +91,32 @@
       <a class="btn link-btn" href="https://maps.app.goo.gl/kownvrBH4MBfg8E36" target="_blank" rel="noopener">Οδηγίες για την εκκλησία</a>
       <a class="btn link-btn" href="https://maps.app.goo.gl/R26q9qrDRgKVt6Wx8" target="_blank" rel="noopener">Οδηγίες για τη δεξίωση</a>
     </div>
-    <button id="restart" class="restart">Προβολή από την αρχή</button>
+    <button id="showFinal" class="restart">Συνέχεια</button>
+  </div>
+</section>
+
+<section id="finalScene" class="scene final-scene">
+  <div class="final-card">
+    <div class="final-copy">
+      <span class="final-ornament">♡</span>
+      <h1>Σας ευχαριστούμε</h1>
+      <p>που θα είστε δίπλα μας<br>στη σημαντικότερη στιγμή της ζωής μας.</p>
+    </div>
+    <div class="final-photo-wrap">
+      <img src="final-photo.webp" alt="Αδάμος και Μαρία στο Κάβο Γκρέκο">
+    </div>
+    <div class="countdown" aria-label="Αντίστροφη μέτρηση μέχρι τον γάμο">
+      <span id="daysLeft">—</span>
+      <small id="countdownLabel">ημέρες μέχρι τη μεγάλη μας μέρα</small>
+    </div>
+    <div class="final-signoff">
+      <span>Με αγάπη</span>
+      <strong>Αδάμος &amp; Μαρία</strong>
+    </div>
+    <button id="restart" class="btn restart-final">↻ Προβολή από την αρχή</button>
   </div>
 </section>
 </main>
-<script src="final-v14.js?v=14"></script>
+<script src="final-v15.js?v=15"></script>
 </body>
 </html>
