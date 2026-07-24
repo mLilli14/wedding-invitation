@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#f3e8f5">
 <title>Αδάμος & Μαρία — 27.09.2026</title>
-<link rel="stylesheet" href="final-v15.css?v=15">
+<link rel="stylesheet" href="final-v17.css?v=17">
 </head>
 <body>
 
@@ -17,7 +17,7 @@
 
 <div id="openingGlow" class="opening-glow" aria-hidden="true"></div>
 <button id="musicToggle" class="music-toggle hidden" type="button" aria-label="Παύση μουσικής" title="Μουσική">♪</button>
-<audio id="weddingMusic" src="wedding-ambient.wav" preload="auto" loop></audio>
+<audio id="weddingMusic" src="cant-help-falling-in-love.mp3" preload="auto" autoplay loop playsinline></audio>
 
 <main id="mainContent" class="is-loading">
 <section id="intro" class="scene active">
@@ -73,7 +73,7 @@
     <img class="lace lace-bottom" src="lace-bottom.svg" alt="">
     <img class="lace lace-left" src="lace-left.svg" alt="">
   </div>
-  <button id="showMap" class="btn">Δες τον χάρτη</button>
+  <button id="showFinal" class="btn">Συνέχεια</button>
 </section>
 
 <section id="mapScene" class="scene">
@@ -91,7 +91,7 @@
       <a class="btn link-btn" href="https://maps.app.goo.gl/kownvrBH4MBfg8E36" target="_blank" rel="noopener">Οδηγίες για την εκκλησία</a>
       <a class="btn link-btn" href="https://maps.app.goo.gl/R26q9qrDRgKVt6Wx8" target="_blank" rel="noopener">Οδηγίες για τη δεξίωση</a>
     </div>
-    <button id="showFinal" class="restart">Συνέχεια</button>
+    <button id="restart" class="restart">↻ Προβολή από την αρχή</button>
   </div>
 </section>
 
@@ -106,17 +106,22 @@
       <img src="final-photo.webp" alt="Αδάμος και Μαρία στο Κάβο Γκρέκο">
     </div>
     <div class="countdown" aria-label="Αντίστροφη μέτρηση μέχρι τον γάμο">
-      <span id="daysLeft">—</span>
-      <small id="countdownLabel">ημέρες μέχρι τη μεγάλη μας μέρα</small>
+      <div class="countdown-title">Μέχρι τη μεγάλη μας μέρα</div>
+      <div class="countdown-grid">
+        <div><strong id="daysLeft">—</strong><small>Ημέρες</small></div>
+        <div><strong id="hoursLeft">—</strong><small>Ώρες</small></div>
+        <div><strong id="minutesLeft">—</strong><small>Λεπτά</small></div>
+        <div><strong id="secondsLeft">—</strong><small>Δευτερόλεπτα</small></div>
+      </div>
     </div>
     <div class="final-signoff">
       <span>Με αγάπη</span>
       <strong>Αδάμος &amp; Μαρία</strong>
     </div>
-    <button id="restart" class="btn restart-final">↻ Προβολή από την αρχή</button>
+    <button id="showMap" class="btn restart-final">Συνέχεια στις τοποθεσίες</button>
   </div>
 </section>
 </main>
-<script src="final-v15.js?v=15"></script>
+<script src="final-v17.js?v=17"></script>
 </body>
 </html>
